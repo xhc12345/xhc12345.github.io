@@ -1,12 +1,23 @@
+.imageList{
+    display: flex;
+    flex-direction:row
+}
 
+.imageDiv{
+    padding: 5%;
+    margin: 5%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+.link:hover{
+    color: cyan;
+    outline: black;
+}
 
-.redText{
+#header{
     color: red
 }
 .greenText{
     color: green
-}
-.a:hover{
-    color: cyan;
-    outline: black;
 }

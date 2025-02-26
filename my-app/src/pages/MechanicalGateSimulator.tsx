@@ -10,8 +10,12 @@ const joinPath = (...inputs: string[]): string => {
 const BASE_FOLDER: string = "simulators";
 const SIMULATORS_PAGES: { fileName: string; text: string }[] = [
   { fileName: "mech-2-inputs-nand-sim.html", text: "2-inputs NAND gate" },
-  { fileName: "mech-2-inputs-nor-sim.html", text: "2-inputs NOR gate" },
-  { fileName: "mech-3-inputs-nand-sim.html", text: "3-inputs NAND gate" },
+  // { fileName: "mech-2-inputs-nor-sim.html", text: "2-inputs NOR gate" },
+  // { fileName: "mech-3-inputs-nand-sim.html", text: "3-inputs NAND gate" },
+  {
+    fileName: "mech-neg-even-num-checker.html",
+    text: "Mechanical negative even number checker",
+  },
 ];
 const SIMULATORS_PATHS: string[] = SIMULATORS_PAGES.map((p) =>
   joinPath(BASE_FOLDER, p.fileName)
